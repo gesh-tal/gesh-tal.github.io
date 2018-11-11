@@ -1,0 +1,16 @@
+.carousel {
+	width: 100%;
+	background-color: #fff;
+}
+
+#carousel .item{
+	width: 50%;
+  	margin: 70px auto;
+}
+
+#carousel .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+

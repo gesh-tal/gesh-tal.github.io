@@ -1,0 +1,80 @@
+
+.promo {
+	width: 100%;
+	background-image: url('../../images/menu pattern.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+.about_block {
+	width: 45%;
+}
+
+.promo_title {
+	color: #cc9900;
+}
+
+.promo_text {
+	width: 75%;
+	color: #4c4c4c;
+}
+
+.promo_cook {
+	margin-left: 80px;
+	width: 200px;
+}
+
+.promo_dish {
+	width: 100%;
+	transition: all 1s ease-out;
+	cursor: pointer;
+}
+
+.promo_dish:hover {
+	transform: scale(1.1);
+}
+
+.promo_right {
+	width: 43%;
+}
+
+@media (max-width: 768px) {
+	.promo {
+		flex-direction: column;
+	}
+
+	.about_block {
+		width: 80%;
+	}
+
+	.promo_right {
+		width: 50%;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.promo_cook {
+		margin-left: 60px;
+    	width: 150px;
+	}
+}
+
+@media (max-width: 425px) {
+	.about_block {
+		width: 100%;
+	}
+	.promo_title {
+		text-align: center;
+	}
+
+	.promo_text {
+    	width: 100%;
+	}
+
+	.promo_right {
+    	width: 100%;
+	}
+}

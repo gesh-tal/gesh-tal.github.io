@@ -1,0 +1,140 @@
+
+.menu {
+	width: 100%;
+	background-image: url('../../images/menu pattern.png');
+}
+
+.menu_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px;
+}
+
+.menu_block {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	margin: 30px 60px;
+}
+
+.menu_block img {
+	width: 60%;
+	margin: 0 auto 20px;
+}	
+
+.menu_title {
+	color: #cc9900;
+	text-align: center;
+}
+
+.dish_name {
+	font-family:'Yeseva One', cursive;
+	border-bottom: 1px solid #cc9900;
+	color: #cc9900;
+	padding-bottom: 10px;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dish_name span {
+	font-family:'Yeseva One', cursive;
+}
+
+.menu_block .dish_text {
+	color: #4c4c4c;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.special {
+	border: 1px solid #cc9900;
+	padding: 8px;
+	position: relative;
+	margin: 10px 0 15px;
+}
+
+.special:before {
+	content: "Special";
+	width: 12%;
+	background-color: #cc9900;
+	color: #fff;
+	font-size: 13px;
+	padding: 4px;
+	position: absolute;
+	top: -21px;
+	right: -1px;
+}
+
+@media (max-width: 1024px) {
+	.special:before {
+		width: 17%;
+	}
+
+	.menu_block .dish_text {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.menu_list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu_block {
+		width: 55%;
+	}
+
+	.menu_block .dish_text{
+		font-size: 16px;
+	}
+
+	.special:before {
+		width: 13%;
+	}
+}
+
+@media (max-width: 425px) {
+	.menu-list {
+		padding-top: 30px;
+	}
+
+	.menu_block {
+    	width: 106%;
+	}
+
+	.menu_title {
+		font-size: 25px;
+	}
+
+	.menu_block .dish_text {
+		font-size: 15px;
+	}
+
+	.special:before {
+		width: 13%;
+	}
+}
+
+@media (max-width: 375px) {
+	.special:before {
+		width: 15%;
+	}
+
+	.menu_block .dish_text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 320px) {
+	.special:before {
+		width: 17%;
+	}
+
+	.menu_block .dish_text {
+		font-size: 14px;
+	}
+}
+

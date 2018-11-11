@@ -1,0 +1,112 @@
+
+.review {
+	width: 100%;
+	background-image: url('../../images/review bg.png');
+	background-size: cover; 
+	background-attachment: fixed;
+	padding: 10% 0;
+	display: flex;
+	justify-content: center;
+}
+
+.review_post {
+	width: 45%;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 30px;
+}
+
+.review_title {
+	color: #fff;
+	margin-top: 30px;
+}
+
+.review_divider {
+	width: 35%;
+}
+
+.quote {
+	width: 30px;
+	position: relative;
+	left: -220px;
+}
+
+.review_text {
+	width: 75%;
+	font-family: 'Yeseva One', cursive;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #fff;
+	text-align: center;
+}
+
+.review_source {
+	color: #fff;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+	.quote {
+	    position: relative;
+	    left: -140px;
+	}
+}
+
+@media (max-width: 768px) {
+	.review_post {
+		width: 70%; 
+	}
+
+	.review_text {
+		width: 77%; 
+	}
+
+	.quote {
+	    position: relative;
+	    left: -190px;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.review {
+		padding: 0;
+		background-position: center;
+	}
+
+	.review_post {
+		width: 100%; 
+		padding: 20px 10px;
+	}
+
+	.review_divider {
+    	width: 55%;
+	}
+
+	.review_text {
+		width: 90%; 
+		font-size: 15px;
+	}
+
+	.quote {
+	    position: relative;
+	    left: -193px;
+	}
+}
+
+@media (max-width: 375px) {
+	.quote {
+	    position: relative;
+	    left: -168px;
+	}
+}
+
+@media (max-width: 320px) {
+	.quote {
+	    position: relative;
+	    left: -128px;
+	}
+}
+

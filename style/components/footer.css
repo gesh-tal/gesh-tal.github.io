@@ -1,0 +1,87 @@
+
+.footer {
+	width: 100%;
+	height: 280px;
+	background-image: url('../../images/footer bg.png');
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 15%;
+}
+
+.info_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 32%;
+}
+
+.info_title {
+	font-family: 'Yeseva One', cursive;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.footer_divider {
+	width: 60%;
+	margin-top: 10px;
+}
+
+.info_text {
+	color: #fff;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+	.info {
+		padding: 0 7%;
+	}
+
+	.info_block {
+		width: 33%;
+	}
+
+@media (max-width: 768px) {
+	.info {
+		padding: 0 11px;
+	}
+
+	.info_block {
+		width: 33%;
+	}
+
+	.block_text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 425px) {
+	.footer {
+		height: auto;
+	}
+
+	.info {
+		flex-direction: column;
+		padding: 11px;
+	}
+
+	.info_block {
+		width: 99%;
+	}
+
+	.footer_icon {
+		margin-bottom: 20px;
+	}
+
+	.block_text {
+		font-size: 15px;
+	}
+}
+

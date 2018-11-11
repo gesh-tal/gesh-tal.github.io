@@ -1,0 +1,167 @@
+
+.reserve {
+	width: 100%;
+	background-image: url('../../images/reserve pattern.png');
+}
+
+.reserve_block {
+	display: flex;
+	justify-content: center;
+	padding: 90px;
+}	
+
+.reserve_left {
+	width: 50%;
+	display: flex;
+}
+
+.reserve_img {
+	background-size: cover;
+	width: 40%;
+	margin: 15px;
+	filter: drop-shadow(8px 8px 10px #000);
+}
+
+.reserve_img:hover {
+	filter: opacity(75%);
+}
+
+.reserve_right {
+	width: 43%;
+	margin-left: -50px;
+}
+
+.reserve_title {
+	color: #cc9900;
+}
+
+.reserve_divider {
+	width: 40%;
+	margin-bottom: 10px;
+}
+
+.reserve_text {
+	color: #4c4c4c;
+	width: 80%;
+}
+
+.all_form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form_title {
+	color: #cc9900;
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+.form_content {
+	color: #4c4c4c;
+	font-style: italic;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin: 5px 20px 20px;
+	width: 170px;
+	height: 30px;
+}
+
+.form_content:focus {
+	outline: none;
+	border: 1px solid #cc9900;
+}
+
+.book_button {
+	background-color: #cc9900;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 10px 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url('../../images/reserve icon.png') no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+	.reserve_img {
+	    width: 47%;
+	    margin: 10px;
+	}
+
+	.reserve_right {
+	    margin-left: 0px;
+	}
+}
+
+@media (max-width: 768px) {
+	.reserve_block {
+		flex-direction: column;
+	}
+
+	.reserve_left {
+		width: 100%;
+		height: 400px;
+		margin-left: 40px;
+	}
+
+	.reserve_img {
+	    width: 38%;
+	    margin: 20px;
+	}
+
+	.reserve_right {
+		width: 100%;
+		margin: 30px auto;
+	}
+}
+
+@media (max-width: 425px) {
+	.reserve_block {
+		padding: 15px;
+	}
+
+	.reserve_divider {
+    	width: 75%;
+	}
+
+	.reserve_left {
+		width: 100%;
+		height: 295px;
+		margin: 0;
+	}
+
+	.reserve_img {
+		width: 45%;
+		margin: 16px;
+	}
+
+	.book_button {
+		display: block;
+		margin: 0 20px;
+	}
+}
+
+
+
+
+
